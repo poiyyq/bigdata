@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Sep 03 15:36:12 CST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0174-52e4-fb5f-00001f8ff3a0 
+on database directory /Volumes/disk/yyq/code/bigdata/metastore_db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/Users/admin/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=/Volumes/disk/yyq/code/bigdata
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
