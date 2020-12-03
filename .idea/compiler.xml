@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mysql" />
+        <module name="es" />
+        <module name="common" />
         <module name="spark" />
+        <module name="hive" />
+        <module name="mysql" />
         <module name="hudi" />
         <module name="flink" />
-        <module name="hive" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

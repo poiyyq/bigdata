@@ -14,6 +14,8 @@
         <module>mysql</module>
         <module>spark</module>
         <module>flink</module>
+        <module>es</module>
+        <module>common</module>
     </modules>
 
     <properties>
