@@ -2,7 +2,6 @@ package com.winnie;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
-import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
@@ -23,7 +22,7 @@ public class EsSearch {
         props.load(EsImport.class.getResourceAsStream("/esconfig.properties"));
         String hostAndPorts = props.getProperty("hostAndPorts");
         List<HttpHost> httpHostList = new ArrayList<>();
-        if(hostAndPorts!=null && !hostAndPorts.equals("")){
+        if (hostAndPorts != null && !hostAndPorts.equals("")) {
             String[] hostAndPortArr = hostAndPorts.split(",");
             for (String hostAndPort : hostAndPortArr) {
                 String[] split = hostAndPort.split(":");
@@ -45,7 +44,7 @@ public class EsSearch {
         SearchHits hits = search.getHits();
         long totalHits = hits.getTotalHits();
         for (long i = 0; i < totalHits; i++) {
-            SearchHit at = hits.getAt(Integer.parseInt(i+""));
+            SearchHit at = hits.getAt(Integer.parseInt(i + ""));
             Map<String, Object> sourceAsMap = at.getSourceAsMap();
             System.out.println(sourceAsMap.get("way_a_reason"));
         }
