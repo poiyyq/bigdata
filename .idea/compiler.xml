@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="es" />
         <module name="common" />
+        <module name="redis" />
         <module name="spark" />
         <module name="hive" />
         <module name="mysql" />
